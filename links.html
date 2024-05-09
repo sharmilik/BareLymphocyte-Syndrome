@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sharmili</title>
+    <link href="main.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header"> 
+        <h1 class="head">BSNdb</h1>
+        <p class="sub-head">A database designed for BareLymphocyte Syndrome</p>
+        <a href="https://saveethamedicalcollege.squarespace.com/ent" class="help-line-icon" target="_blank"><i class="fa-solid fa-headset"></i></a>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul id="myMenu">
+        <li><a href="main.html">Home</a></li>
+        <li><a href="ms.html">Sequence</a></li>
+        <li><a href="structure.html">Structure</a></li>
+        <li><a href="pathway.html">Pathways</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="help.html">Reference</a></li>
+            <li><a href="contact.html">Contact</a></li>
+       <li> <div class="search-container">
+          
+            <input type="text"  id="mySearch" onkeyup="myFunction()" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          
+        </div></li>
+        </ul>
+      </div>
+      <span style="font-size:30px;cursor:pointer;color:aqua;" onclick="openNav()"><i class="fa-solid fa-bars"></i> </span>
+      
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()"></span>
+    <div class="navlinks">
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="ms.html">Sequence</a></li>
+            <li><a href="structure.html">Structure</a></li>      
+            <li><a href="help.html">Reference</a></li>
+            <li><a href="pathway.html">Pathways</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="sequence">
+                <a href="javascript:void(0)" class="dropbtn">Bioinformatics Links</a>
+              <div class="dropdown-content">
+                <a href="proto.html">Tools</a>
+                <a href="geo.html">Softwares</a>
+              </div>
+              </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="ms-head">
+        <h1>Other Links</h1>
+    </div>
+    <div class="links">
+      <h1 class="lin-head">UNIPROT:</h1>
+      <a class="lin" href="https://www.uniprot.org/uniprotkb/O14593/entry">https://www.uniprot.org/uniprotkb/O14593/entry</a>
+      <h1 class="lin-head">NCBI:</h1>
+      <a class="lin" href="https://www.ncbi.nlm.nih.gov/protein/NP_000529.1">https://www.ncbi.nlm.nih.gov/protein/NP_000529.1</a>
+      <h1 class="lin-head">PDB:</h1>
+      <a class="lin" href="https://www.rcsb.org/structure/1DP7">https://www.rcsb.org/structure/1DP7</a>
+      <h1 class="lin-head">PFAM:</h1>
+      <a class="lin" href="https://www.ebi.ac.uk/interpro/search/text/1dp7/#table">https://www.ebi.ac.uk/interpro/search/text/1dp7/#table</a>
+      <h1 class="lin-head">PROSITE:</h1>
+      <a class="lin" href="https://prosite.expasy.org/PDOC51526">https://prosite.expasy.org/PDOC51526</a>
+      <h1 class="lin-head">PUBCHEM:</h1>
+      <a class="lin" href="https://www.rcsb.org/ligand/RFX">https://www.rcsb.org/ligand/RFX</a>
+      <h1 class="lin-head">OMIM:</h1>
+      <a class="lin" href="https://www.omim.org/entry/604571?search=%22bare%20lymphocyte%20syndrome%22&highlight=%22%28baer%7Cbare%29%20%28lymphocytic%7Clymphocyte%29%20%28syndromic%7Csyndrome%29%22
+      ">https://www.omim.org/entry/604571?search=%22bare%20lymphocyte%20syndrome%22&highlight=%22%28baer%7Cbare%29%20%28lymphocytic%7Clymphocyte%29%20%28syndromic%7Csyndrome%29%22
+    </a>
+    <h1 class="lin-head">PUBMED:</h1>
+    <a class="lin" href="https://pubmed.ncbi.nlm.nih.gov/22027563/">https://pubmed.ncbi.nlm.nih.gov/22027563/class="lin" </a>
+    </div>
+    <script >
+        function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+function myFunction() {
+var input, filter, ul, li, a, i;
+input = document.getElementById("mySearch");
+filter = input.value.toUpperCase();
+ul = document.getElementById("myMenu");
+li = ul.getElementsByTagName("li");
+for (i = 0; i < li.length; i++) {
+a = li[i].getElementsByTagName("a")[0];
+if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+  li[i].style.display = "";
+} else {
+  li[i].style.display = "none";
+}
+}
+}
+    </script>
+    <footer>
+        <b>© 2023 Sharmili K</b>
+    </footer>
+</body>
+</html>

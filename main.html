@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sharmili</title>
+    <link href="main.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-page">
+        <div class="header"> 
+            <h1 class="head">BSNdb</h1>
+            <p class="sub-head">A database designed for BareLymphocyte Syndrome</p>
+            <a href="https://saveethamedicalcollege.squarespace.com/ent" class="help-line-icon" target="_blank"><i class="fa-solid fa-headset"></i></a>
+            <!-- Search bar aligned to right -->
+            
+            <!-- End of search bar -->
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul id="myMenu">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="ms.html">Sequence</a></li>
+            <li><a href="structure.html">Structure</a></li>
+            <li><a href="pathway.html">Pathways</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="help.html">Reference</a></li>
+                <li><a href="contact.html">Contact</a></li>
+           <li> <div class="search-container">
+              
+                <input type="text"  id="mySearch" onkeyup="myFunction()" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              
+            </div></li>
+            </ul>
+          </div>
+          <span style="font-size:30px;cursor:pointer;color:aqua;" onclick="openNav()"><i class="fa-solid fa-bars"></i> </span>
+          
+          <!-- Use any element to open the sidenav -->
+          <span onclick="openNav()"></span>
+          
+        <div class="navlinks">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="ms.html">Sequence</a></li>
+                <li><a href="structure.html">Structure</a></li>
+                <li><a href="pathway.html">Pathways</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="sequence">
+                    <a href="javascript:void(0)" class="dropbtn">Bioinformatics Links</a>
+                    <div class="dropdown-content">
+                        <a href="proto.html">Tools</a>
+                        <a href="geo.html">Softwares</a>
+                    </div>
+                </li>
+                <li><a href="help.html">Reference</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="image-trans"></div>
+        <div class="main-content">
+            <div class="main-head">
+                <h1>BareLymphocyte Syndrome</h1>
+            </div>
+            <div class="main-sub">
+                <p>Bare lymphocyte syndrome (BLS) is an inherited condition of the immune system, and is known as a "primary immunodeficiency. Children inherit the BLS gene from their parents. Both must carry the genetic mutation for BLS, but may not have symptoms of the disease.Mutation in Major Histocompatibility ClassII [MHC] complexes causes BLS.</p>
+            </div>
+        </div>
+        <div class="content-box">
+            <div class="info">
+                <h1 class="hr">RFX-5:</h1>
+                <p>RFX5 promotes the progression of hepatocellular carcinoma through transcriptional activation of KDM4A. RFX5 regulates gene expression of the Pcdhalpha cluster. RFX5 acts as a direct positive transcriptional regulator of TPP1 in hepatocellular carcinoma.</p>
+            </div>
+            <div class="info">
+                <h1 class="hr">RFXAP:</h1>
+                <p>The RFXAP protein is part of a group of proteins called the regulatory factor X (RFX) complex. This complex attaches to a specific region of DNA involved in the regulation of MHC class II gene activity. The RFXAP protein helps the complex attach to the correct region of DNA.</p>
+            </div>
+            <div class="info">
+                <h1 class="hr">RFX-B:</h1>
+                <p>Over-expression of RFXB by lentiviral infection in HASMCs enhanced HDAC2 enlistment, promoted histone deacetylation surrounding the collagen site by IFN-γ, and blocked the TGF-β antagonism, a pattern reversed by RFXBSV infection.</p>
+            </div>
+        </div>
+        <div class="diag-box">
+            <div class="diag-inf0">
+                <h1 class="hrr">DIAGNOSIS:</h1>
+                <p class="pr">Clinical manifestations include susceptibility to severe bacterial, viral, and fungal infections which can lead to failure to thrive and childhood death.</p>
+                <p class="pr">The only definitive treatment to date is allogeneic stem cell transplantation.</p>
+                <p class="pr">Doctors diagnose BLS through blood tests. Testing for certain immune markers in the blood lets us see how well the immune system is functioning.</p>
+                <p class="pr">Your child may also need a chest x-ray to see whether BLS has caused damage to the lungs.</p>
+            </div>
+            <div class="diag-inf0">
+                <h1 class="hrr">Patient support and Advocacy services</h1>
+                <a href="https://www.ncbi.nlm.nih.gov/gtr/conditions/C1859534/?_ga=2.93249181.1874464551.1709018052-1536128433.1696301836" target="_blank"><p class="pr">Genetic Testing Information</p></a>
+                <a href="https://www.ncbi.nlm.nih.gov/gtr/conditions/C1859536/?_ga=2.8173234.1874464551.1709018052-1536128433.1696301836" target="_blank"><p class="pr">Genetic Testing Registry</p></a>
+                <a href="https://clinicaltrials.gov/search?cond=%22Bare%20lymphocyte%20syndrome%20type%20II%22" target="_blank"><p class="pr">Clinical Trials</p></a>
+                <a href="https://www.diseaseinfosearch.org/" target="_blank"><p class="pr">Patient support and Advocacy services</p></a>
+                <a href="https://rarediseases.org/" target="_blank"><p class="pr">NORD</p></a>
+            </div>
+        </div>
+        <script >
+            function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+        </script>
+        <footer>
+            <b>© 2023 Sharmili K</b>
+        </footer>
+    </div>
+    
+</body>
+</html>

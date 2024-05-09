@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sharmili</title>
+    <link href="main.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        table, th, td {
+          border: 1px solid white;
+          color: white;
+        }
+        </style>
+</head>
+<body>
+  <div class="main-con">
+    <div class="header"> 
+        <h1 class="head">BSNdb</h1>
+        <p class="sub-head">A database designed for BareLymphocyte Syndrome</p>
+        <a href="https://saveethamedicalcollege.squarespace.com/ent" class="help-line-icon" target="_blank"><i class="fa-solid fa-headset"></i></a>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <ul id="myMenu">
+      <li><a href="main.html">Home</a></li>
+      <li><a href="ms.html">Sequence</a></li>
+      <li><a href="structure.html">Structure</a></li>
+      <li><a href="pathway.html">Pathways</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="help.html">Reference</a></li>
+          <li><a href="contact.html">Contact</a></li>
+     <li> <div class="search-container">
+        
+          <input type="text"  id="mySearch" onkeyup="myFunction()" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        
+      </div></li>
+      </ul>
+    </div>
+    <span style="font-size:30px;cursor:pointer;color:aqua;" onclick="openNav()"><i class="fa-solid fa-bars"></i> </span>
+    
+    <!-- Use any element to open the sidenav -->
+    <span onclick="openNav()"></span>
+    <div class="navlinks">
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="ms.html">Sequence</a></li>
+            <li><a href="structure.html">Structure</a></li>
+            <li><a href="pathway.html">Pathways</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="sequence">
+              <a href="javascript:void(0)" class="dropbtn">Bioinformatics Links</a>
+            <div class="dropdown-content">
+              <a href="proto.html">Tools</a>
+              <a href="geo.html">Softwares</a>
+            </div>
+            </li>
+            <li><a href="help.html">Reference</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </div>
+    <div class="table">
+        <table style="width:100%" >
+            <tr>
+              <th>S.No</th>
+              <th>Article Name</th>
+              <th>Protein Name</th>
+              <th>PDB ID</th>
+              <th>Resolution</th>
+              <th>Link</th>
+            </tr>
+            <tr style="height:100px">
+                <th>1</th>
+
+                <th>Structure of the winged-helix protein hRFX1 reveals a new mode of DNA binding.</th>
+                <th>RFX-DBD</th>
+                <th>1DP7</th>
+                <th>1.50 Å</th>
+                <th><a href="https://www.rcsb.org/structure/1DP7">Link</a></th>
+              </tr>
+              <tr style="height:100px">
+                <th>2</th>
+                <th>The NMR structure of the autophagy-related protein Atg8</th>
+                <th>ATG8</th>
+                <th>2KWC</th>
+                <th>1.50 Å</th>
+                <th><a href="https://www.rcsb.org/structure/2KWC">Link</a></th>
+              </tr>
+              <tr style="height:100px">
+                <th>3</th>
+                <th>Sequence-Specific Recognition of a PxLPxI/L Motif by an Ankyrin Repeat Tumbler Lock.</th>
+                <th>RFXANK</th>
+                <th>3UXG</th>
+                <th>1.85 Å</th>
+                <th><a href="https://www.rcsb.org/structure/3UXG">Link</a></th>
+              </tr>
+              <tr style="height:100px">
+                <th>4</th>
+                <th>Structural mechanisms of the degenerate sequence recognition by Bse634I restriction endonuclease.</th>
+                <th>ANKRA</th>
+                <th>3SO8</th>
+                <th>1.90 Å</th>
+                <th><a href="https://www.rcsb.org/structure/3SO8">Link</a></th>
+              </tr>
+              <tr style="height:100px">
+                <th>5</th>
+                <th>Structural mechanisms of the degenerate sequence recognition by Bse634I restriction endonuclease.</th>
+                <th>Type IIF-Bse 6341</th>
+                <th>3V2O</th>
+                <th>2.35 Å</th>
+                <th><a href="https://www.rcsb.org/structure/3V2O">Link</a></th>
+              </tr>
+              <tr style="height:100px">
+                <th>6</th>
+                <th>Sequence-Specific Recognition of a PxLPxI/L Motif by an Ankyrin Repeat Tumbler Lock.</th>
+                <th>ANKYRIN</th>
+                <th>3V2X</th>
+                <th>1.85 Å</th>
+                <th><a href="https://www.rcsb.org/structure/3V2X">Link</a></th>
+              </tr>
+              <tr style="height:100px">
+                <th>7</th>
+                <th>Crystal Structure of the Peptide Bound Complex of the Ankyrin Repeat Domains of Human RFXANK</th>
+                <th>ANKYRIN RFXANK</th>
+                <th>3V30</th>
+                <th>1.57 Å</th>
+                <th><a href="https://www.rcsb.org/structure/3V3O">Link</a></th>
+              </tr>
+              <tr style="height:100px">
+                <th>8</th>
+                <th>Crystal Structure of the Peptide Bound Complex of the Ankyrin Repeat Domains of Human ANKRA2</th>
+                <th>ANKRA2</th>
+                <th>3V31</th>
+                <th>1.57 Å</th>
+                <th><a href="https://www.rcsb.org/structure/3V31">Link</a></th>
+              </tr>
+              <tr style="height:100px">
+                <th>9</th>
+                <th>Ankyrin Repeats of ANKRA2 Recognize a PxLPxL Motif on the 3M Syndrome Protein CCDC8.</th>
+                <th>ANKRA2-CCDC8</th>
+                <th>4LG6</th>
+                <th>1.80 Å</th>
+                <th><a href="https://www.rcsb.org/structure/4LG6">Link</a></th>
+              </tr>
+              <tr style="height:100px">
+                <th>10</th>
+                <th>RFXANK ankyrin repeats in complex with a RFX7 peptide</th>
+                <th>RFX7</th>
+                <th>6MEW</th>
+                <th>1.78 Å</th>
+                <th><a href="https://www.rcsb.org/structure/6MEW">Link</a></th>
+              </tr>
+              <tr style="height:100px">
+                <th>11</th>
+                <th>Crystal structure of ANKRA2-RFX7 complex</th>
+                <th>TbpB</th>
+                <th>4QQI</th>
+                <th>2.03 Å</th>
+                <th><a href="https://www.rcsb.org/structure/4QQI">Link</a></th>
+              </tr>
+              <tr style="height:100px">
+                <th>12</th>
+                <th>Cryo-EM structure of the bi-functional malonyl-CoA reductase from Roseiflexus castenholzii</th>
+                <th>SARS-COV-B414C</th>
+                <th>8HI4</th>
+                <th>3.35 Å</th>
+                <th><a href="https://www.rcsb.org/structure/8HI4">Link</a></th>
+              </tr>
+              <tr style="height:100px">
+                <th>13</th>
+                <th>Crystal structure of the NADP+ and MSA bound C terminal domain of bi-functional malonyl-CoA reductase from Roseiflexus castenholzii</th>
+                <th>SARS-COV-2</th>
+                <th>8HI5</th>
+                <th>2.30 Å</th>
+                <th><a href="https://www.rcsb.org/structure/8HI5">Link</a></th>
+              </tr>
+              <tr style="height:100px">
+                <th>14</th>
+                <th>Crystal structure of LeuBAT (delta13 mutant) in complex with (R)-fluoxetine</th>
+                <th>LeuBAT</th>
+                <th>4MM8</th>
+                <th>3.31 Å</th>
+                <th><a href="https://www.rcsb.org/structure/4MM8">Link</a></th>
+              </tr>
+              <tr style="height:100px">
+                <th>15</th>
+                <th>Leucine transporter LeuT in complex with R-fluoxetine</th>
+                <th>LeuT</th>
+                <th>3GWV</th>
+                <th>2.35  Å</th>
+                <th><a href="https://www.rcsb.org/structure/3GWV">Link</a></th>
+              </tr>
+              <tr style="height:100px">
+                <th>16</th>
+                <th>Architecture of the chromatin remodeler RSC and insights into its nucleosome engagement.</th>
+                <th>RSC core</th>
+                <th>6V8O</th>
+                <th>3.07  Å</th>
+                <th><a href="https://www.rcsb.org/structure/6V8O">Link</a></th>
+              </tr>
+              
+              <tr style="height:100px">
+                <th>17</th>
+                <th>The overall structure of human chromatin remodeling PBAF-nucleosome complex</th>
+                <th>PBAF</th>
+                <th>7VDV</th>
+                <th>3.40 Å</th>
+                <th><a href="https://www.rcsb.org/structure/7VDV">Link</a></th>
+              </tr>
+              <tr style="height:100px">
+                <th>18</th>
+                <th>Structures of the Human SPAK and OSR1 Conserved C-Terminal (CCT) Domains</th>
+                <th>CCP Human</th>
+                <th>7O86</th>
+                <th>1.73 Å</th>
+                <th><a href="https://www.rcsb.org/structure/7O86">Link</a></th>
+              </tr>
+              <tr style="height:100px">
+                <th>19</th>
+                <th>Crystal structure of RFXANK</th>
+                <th>Human Anti-IFN</th>
+                <th>3UXG</th>
+                <th>1.85 Å</th>
+                <th><a href="https://www.rcsb.org/structure/3UXG">Link</a></th>
+              </tr>
+              <tr style="height:100px">
+                <th>20</th>
+                <th>Structure of nucleosome-bound human PBAF complex.</th>
+                <th>Human PBA7 Complex</th>
+                <th>7Y8R</th>
+                <th>4.40 Å</th>
+                <th><a href="https://www.rcsb.org/structure/7Y8R">Link</a></th>
+              </tr>
+            </div>
+          </div>
+          <script >
+            function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+        </script>
+        </body>
+        </html>
+            
